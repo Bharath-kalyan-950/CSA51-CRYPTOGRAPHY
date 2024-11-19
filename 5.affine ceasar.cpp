@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// Function to calculate GCD
+
 int gcd(int a, int b) {
     while (b != 0) {
         int temp = b;
@@ -11,7 +11,7 @@ int gcd(int a, int b) {
     return a;
 }
 
-// Function to find modular multiplicative inverse of a modulo 26
+
 int modInverse(int a, int m) {
     a = a % m;
     for (int x = 1; x < m; x++) {
@@ -22,7 +22,7 @@ int modInverse(int a, int m) {
     return -1;
 }
 
-// Encryption function
+
 void encryptAffine(char plaintext[], int a, int b) {
     char ciphertext[100];
     for (int i = 0; plaintext[i] != '\0'; i++) {
@@ -38,7 +38,6 @@ void encryptAffine(char plaintext[], int a, int b) {
     printf("Encrypted Text: %s\n", ciphertext);
 }
 
-// Decryption function
 void decryptAffine(char ciphertext[], int a, int b) {
     char plaintext[100];
     int a_inv = modInverse(a, 26);
