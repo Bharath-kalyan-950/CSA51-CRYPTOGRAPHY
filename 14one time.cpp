@@ -50,4 +50,4 @@ int main() {
     decryptMessage(ciphertext, key, decrypted);
     printf("Decrypted message: %s\n", decrypted);
     return 0;
-}14
+}
