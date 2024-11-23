@@ -77,4 +77,4 @@ int main() {
     decryptMessage(key, encrypted, decrypted);
     printf("Decrypted message: %s\n", decrypted);
     return 0;
-}12
+}
