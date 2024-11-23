@@ -56,4 +56,4 @@ int main() {
     printf("\n");
     decryptUsingKnownPlaintext(plaintext, ciphertext, key);
     return 0;
-}13
+}
